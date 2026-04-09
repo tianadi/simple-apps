@@ -1,11 +1,10 @@
 services:
   simple-apps:
     container_name: ct-simpleapps
-    build: /app
+    image: tianrhmwn/simpleapps
     ports:
       - "8181:3000"
     environment:
-      - name=value
       - DB_NAME=training
       - DB_HOST=172.23.9.35
       - DB_USER=peserta
